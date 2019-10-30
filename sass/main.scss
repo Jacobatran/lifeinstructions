@@ -1,0 +1,241 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #ffffff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+// Header Navbar of Four Icons
+header {
+    background: #FAFAFA;
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    a {
+        box-sizing: border-box;
+        width: 24%;
+        display: inline-block;
+        margin-left: -3px;
+        text-align: center;
+        padding: 12px;
+        
+        
+        &:hover {
+
+            .fa-heart {
+                color: red;
+            }
+            
+        }
+
+        .fas, .far {
+            color: #111111;
+            font-size: 25px;
+
+        }
+    }
+}
+
+
+.container {
+    background: #FAFAFA;
+    padding-top: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    bottom: 0;
+    
+    .card {
+        background: #ffffff;
+        margin: 0 auto;
+        width: 500px;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+
+            .card-header {
+                padding: 15px 15px 3px 15px;
+
+                .profile-image {
+                    display: inline-block;
+                    background: #ffbf00;
+                    height: 31px;
+                    width: 31px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 8px;
+                    margin: 5px;
+                }
+                .profile-info {
+                    display: inline-block;
+                        .location {
+                            font-size: 12px;
+                            color: #111111;
+                        }
+                        .name {
+                            font-size: 14px;
+                            color: #111111;
+                            font-weight: 700;
+                        }
+                }
+                .time {
+                    float: right;
+                    display: inline-block;
+                    font-size: 10px;
+                    top: 10px;
+                    position: relative;
+                    
+                }
+            }
+
+            .content {
+                padding-top: 15px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .card-footer {
+
+                padding: 10px 10px 15px 10px;
+                
+                // padding: 10px;
+                // padding-bottom: 15px;
+                box-sizing: border-box;
+                margin-left: 10px;
+                
+                .likes {
+                    color: #111111;
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+                
+                .description {
+                    p{
+                        font-size: 14px;
+                        margin: 0;  
+                        padding: 0 0 5px 0; 
+                        
+                    }
+
+                    
+                }
+
+                span.username {
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 700;
+                    
+                }
+
+        
+                .comments {
+                    p{
+                        font-size: 14px;
+                        margin: 0;
+                        padding: 0 0 5px 0;
+                    }
+                }
+                
+
+                hr {
+                    padding: 0;
+                }
+                form {
+                    padding-top: 15px;
+                    .fas {
+                        font-size: 24px;
+                        position: relative;
+                        top: 3px;
+                    }
+                    .far {
+                        font-size: 24px;
+                        position: relative;
+                        top: 3px;
+                    }
+
+                    .heart {
+                        width: 7%;
+                        display: inline-block;
+                    }
+                    .comment {
+                        width: 70%;
+                        display: inline-block;
+                        input {
+                            width: 100%;
+                            padding: 5px;
+                            font-weight: 16px;
+                            border: 0px solid #ffffff;
+
+                        }
+                    }
+                    .more {
+                        width: 7%;
+                        display: inline-block;
+                        float: right;
+
+                        .fas {
+                            position: relative;
+                            top: 3px;
+                        }
+                        
+                    }
+                }
+
+
+
+
+            }
+           
+
+
+
+           
+    }
+   
+
+}
